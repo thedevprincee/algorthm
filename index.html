@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
     <style>
         .dflex{
             display: flex;
             flex-direction: column;
+        }
+        .btn{
+            background-color: black; 
+            color: #fff;
+            padding: 10px 0;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+        .btn:hover{
+            background-color: rgb(255, 0, 0);
         }
     </style>
 </head>
@@ -17,14 +28,18 @@
     <div>
         <div class="dflex">
             <textarea name="sentence" id="sentence_input" cols="30" rows="10">Tailwind CSS l is the only framework that I've seen scale on large teams. It easy to customize, adapts to any design, and the build size is tiny.</textarea>
-            <button id="check">Check</button>
+            <br />
+            <button class="btn" id="check">Check</button>
         </div>
         <div>
             <p>Sentence: <span id="display_sentence"></span></p>
             <p>Vowel: <span id="display_vowel"></span></p>
             <p>Consonant: <span id="display_consonant"></span></p>
+  
+            <br />
             <p>length of Sentence: <span id="display_los"></span></p>
-            <p>Length  of word: <span id="display_low"></span></p>
+            <p>Number of word: <span id="display_now"></span></p>
+            <p>Number of Vowel: <span id="length_vowel"></span></p>
         </div>
     </div>
     
